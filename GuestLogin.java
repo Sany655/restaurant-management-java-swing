@@ -30,8 +30,7 @@ public class GuestLogin extends JFrame implements ActionListener {
         setBounds(500, 200, 400, 250); // size of the frame
         // setBackground(Color.YELLOW);
         setResizable(false);
-        // ------------------------------------------------------------------ -- -- --
-        // -- -- -- -- -- -- -- -- -- -- -
+        // ------------------------------------------------------------------
         JMenuBar menuBar = new JMenuBar();
         JMenu menu1 = new JMenu("File");
         JMenu menu2 = new JMenu("Help");
@@ -40,8 +39,7 @@ public class GuestLogin extends JFrame implements ActionListener {
         // Adding Components to the File option on the Main MenuBar
         JMenuItem menu11 = new JMenuItem("Close");
         menu1.add(menu11);
-        // ------------------------------------------------------------------ -- -- --
-        // -- -- -- -- -- -- -- -- -- -- -
+        // ------------------------------------------------------------------
         menu11.addActionListener(e -> {
             this.dispose();
         });
@@ -54,14 +52,12 @@ public class GuestLogin extends JFrame implements ActionListener {
         menu2.add(menu22);
         menu2.add(menu23);
 
-        // ------------------------------------------------------------------ -- -- --
-        // -- -- -- -- -- -- -- -- -- -- -
+        // ------------------------------------------------------------------
         // Main Body Panel: The middle panel
         JPanel mainBodyPanel = new JPanel();
         mainBodyPanel.setSize(400, 180);
         mainBodyPanel.setBackground(Color.LIGHT_GRAY);
-        // ------------------------------------------------------------------ -- -- --
-        // -- -- -- -- -- -- -- -- -- -- -
+        // ------------------------------------------------------------------
         // Main Body Sub Panel 0: The top label on the form
         JPanel mainBodySubPanel0 = new JPanel();
         mainBodySubPanel0.setLayout(null);
@@ -77,16 +73,14 @@ public class GuestLogin extends JFrame implements ActionListener {
         mainBodySubPanel0.add(title);
         mainBodyPanel.add(mainBodySubPanel0);
 
-        // ------------------------------------------------------------------ -- -- --
-        // -- -- -- -- -- -- -- -- -- -- -
+        // ------------------------------------------------------------------
         // Login Panel: The middle panel
         JPanel mainBodySubPanel1 = new JPanel();
         mainBodySubPanel1.setLayout(null);
         mainBodySubPanel1.setPreferredSize(new Dimension(390, 110));
 
         mainBodySubPanel1.setBorder(BorderFactory.createLineBorder(Color.green));
-        // ------------------------------------------------------------------ -- -- --
-        // -- -- -- -- -- -- -- -- -- -- --
+        // ------------------------------------------------------------------
         // Login Panel: The student ID label on the form
         JLabel lguestID = new JLabel("Guest No");
         lguestID.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -111,8 +105,7 @@ public class GuestLogin extends JFrame implements ActionListener {
         });
 
         mainBodySubPanel1.add(tguestID);
-        // ------------------------------------------------------------------ -- -- --
-        // -- -- -- -- --
+        // ------------------------------------------------------------------
         // Login Panel: The create password label on the form
         JLabel lcreatePassword = new JLabel("Password");
         lcreatePassword.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -140,8 +133,7 @@ public class GuestLogin extends JFrame implements ActionListener {
         setVisible(true);
     }
 
-    // ---------------------------------------------------------------------- -- --
-    // -- -- -- --
+    // ----------------------------------------------------------------------
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == submit) {
             int x = 0;
@@ -179,15 +171,13 @@ public class GuestLogin extends JFrame implements ActionListener {
                             igs.individualGuestServices(user);
                             setVisible(true);
                             this.dispose();
-                        } else if ((s1.equals(s4)) && (s3.equals(s6)) &&
-                                (s5.equals("2"))) {
+                        } else if ((s1.equals(s4)) && (s3.equals(s6)) && (s5.equals("2"))) {
                             // JOptionPane.showMessageDialog(submit, "Data Match Successfull ");
                             // AppHomeStudent.main(info);
                             // AppHomeStudent.studentPortal(info);
                             // setVisible(true);
                             // this.dispose();
-                        } else if ((s1.equals(s4)) && (s3.equals(s6)) &&
-                                (s5.equals("2"))) {
+                        } else if ((s1.equals(s4)) && (s3.equals(s6)) && (s5.equals("2"))) {
                             // JOptionPane.showMessageDialog(submit, "Data Match Successfull ");
                             // AppHomeEventOrg.main(info);
                             // setVisible(true);
@@ -209,8 +199,7 @@ public class GuestLogin extends JFrame implements ActionListener {
         }
     }
 
-    // ------------------------------------------------------------------------ --
-    // -- -- -- --
+    // ------------------------------------------------------------------------
     public static void userLogin() {
         GuestLogin l = new GuestLogin();
         l.userValidate();

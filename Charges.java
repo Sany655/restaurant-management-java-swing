@@ -125,8 +125,7 @@ public class Charges extends JFrame implements ActionListener {
             while (da.rst.next()) {
                 String id = da.rst.getString(1);
                 String desc = da.rst.getString(2);
-                tbookingIdModel.addElement(new Item(id, id + " " +
-                        desc));
+                tbookingIdModel.addElement(new Item(id, id + " " + desc));
             }
         } catch (Exception ex) {
             System.out.println(ex);
@@ -165,8 +164,7 @@ public class Charges extends JFrame implements ActionListener {
             while (da.rst.next()) {
                 String id = da.rst.getString(1);
                 String desc = da.rst.getString(2);
-                thotelStaffIdModel.addElement(new Item(id, id + " " +
-                        desc));
+                thotelStaffIdModel.addElement(new Item(id, id + " " + desc));
             }
         } catch (Exception ex) {
             System.out.println(ex);

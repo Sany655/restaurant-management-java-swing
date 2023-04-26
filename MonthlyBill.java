@@ -137,12 +137,12 @@ public class MonthlyBill extends JFrame implements ActionListener {
         tguestId.setSize(210, 20);
         tguestId.setLocation(150, 50);
         tguestId.addActionListener(
-                new ActionListener() {
-                    public void actionPerformed(ActionEvent e) {
-                        JComboBox guestIdComboBox = (JComboBox) e.getSource();
-                        Item item = (Item) guestIdComboBox.getSelectedItem();
-                    }
-                });
+            new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    JComboBox guestIdComboBox = (JComboBox) e.getSource();
+                    Item item = (Item) guestIdComboBox.getSelectedItem();
+                }
+            });
 
         tbillId.setNextFocusableComponent(tguestId);
         mainBodySubPanel2.add(tguestId);
@@ -249,7 +249,7 @@ public class MonthlyBill extends JFrame implements ActionListener {
         clear.addActionListener(this);
         submit.setNextFocusableComponent(clear);
         JButton close = new JButton("Close Form");
-        close.addActionListener(e -> {
+        close.addActionListener(e - > {
             this.dispose();
         });
         clear.setNextFocusableComponent(close);

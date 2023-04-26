@@ -158,8 +158,7 @@ public class CreateBooking extends JFrame implements ActionListener {
          da.rst = da.stat.executeQuery(roomTypeQuery);
 
          while (da.rst.next()) {
-            troomTypeModel.addElement(new Item("",
-                  da.rst.getString(1)));
+            troomTypeModel.addElement(new Item("", da.rst.getString(1)));
          }
       } catch (Exception ex) {
          System.out.println(ex);
